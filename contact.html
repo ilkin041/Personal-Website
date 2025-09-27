@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact form for İlkin Hasanov">
+  <meta name="author" content="İlkin Hasanov">
+  <title>Contact Me | İlkin Hasanov</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+</head>
+<body>
+<header id="top">
+  <h1>İlkin Hasanov — Personal Website ✨</h1>
+  <nav>
+    <a href="index.html">Home</a> |
+    <a href="education.html">Education</a> |
+    <a href="schedule.html">Weekly Schedule</a> |
+    <a href="contact.html">Contact Me</a> |
+    <a href="questionnaire.html">Questionnaire</a>
+  </nav>
+</header>
+
+<main>
+  <section>
+    <h2>Contact Me</h2>
+    <form action="mailto:your.email@example.com" method="POST" enctype="text/plain">
+      <fieldset>
+        <legend>Your Details</legend>
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="Name" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="Email" required><br><br>
+
+        <label for="tel">Phone:</label>
+        <input type="tel" id="tel" name="Phone"><br><br>
+
+      </fieldset>
+
+      <fieldset>
+        <legend>Preferences</legend>
+        <p>Preferred contact method:</p>
+        <label><input type="radio" name="Preferred Contact" value="Email" checked> Email</label>
+        <label><input type="radio" name="Preferred Contact" value="Phone"> Phone</label>
+        <br><br>
+
+        <p>Topics you're interested in:</p>
+        <label><input type="checkbox" name="Interest: Math" value="Yes"> Math</label>
+        <label><input type="checkbox" name="Interest: Programming" value="Yes"> Programming</label>
+        <label><input type="checkbox" name="Interest: AI" value="Yes"> AI</label>
+        <br><br>
+
+        <label for="source">How did you find me?</label>
+        <select id="source" name="Source">
+          <option>Search Engine</option>
+          <option>Social Media</option>
+          <option>Friend / Colleague</option>
+          <option>Event / Workshop</option>
+        </select><br><br>
+
+        <label for="meet">Preferred meeting date:</label>
+        <input type="date" id="meet" name="Meeting Date"><br><br>
+      </fieldset>
+
+      <fieldset>
+        <legend>Your Message</legend>
+        <label for="subject">Subject:</label>
+        <input type="text" id="subject" name="Subject" required><br><br>
+
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="Message" rows="6" cols="50" required></textarea><br><br>
+      </fieldset>
+
+      <button type="submit">Send</button>
+      <button type="reset">Reset</button>
+    </form>
+  </section>
+</main>
+
+<footer>
+  <p>© 2025 İlkin Hasanov • <a href="#top">Back to top ↑</a></p>
+</footer>
+</body>
+</html>
