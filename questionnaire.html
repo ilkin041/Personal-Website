@@ -1,84 +1,69 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Questionnaire page with multiple input types">
-  <meta name="author" content="İlkin Hasanov">
-  <title>Questionnaire | İlkin Hasanov</title>
-  <link rel="icon" type="image/svg+xml" href="favicon.svg">
-</head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="Questionnaire page with multiple input types" name="description"/>
+<meta content="İlkin Hasanov" name="author"/>
+<title>Questionnaire | İlkin Hasanov</title>
+<link href="favicon.svg" rel="icon" type="image/svg+xml"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="True" href="https://fonts.gstatic.com" rel="preconnect"/><link href="style.css" rel="stylesheet"/></head>
 <body>
 <header id="top">
-  <h1>İlkin Hasanov — Personal Website ✨</h1>
-  <nav>
-    <a href="index.html">Home</a> |
-    <a href="education.html">Education</a> |
-    <a href="schedule.html">Weekly Schedule</a> |
-    <a href="contact.html">Contact Me</a> |
-    <a href="questionnaire.html">Questionnaire</a>
-  </nav>
-</header>
+<h1>İlkin Hasanov — Personal Website </h1>
 
+<hr class="fancy"/></header><div class="site-nav-wrap"><nav class="site-nav"><a href="index.html">Home</a><a href="education.html">Education</a><a href="schedule.html">Weekly Schedule</a><a href="gallery.html">Gallery</a><a href="contact.html">Contact Me</a><a class="active" href="questionnaire.html">Questionnaire</a></nav></div>
 <main>
-  <section>
-    <h2>Questionnaire</h2>
-    <form action="mailto:your.email@example.com" method="POST" enctype="text/plain">
-      <fieldset>
-        <legend>Basics</legend>
-        <label for="qname">Name:</label>
-        <input type="text" id="qname" name="Name" required><br><br>
-
-        <label for="qemail">Email:</label>
-        <input type="email" id="qemail" name="Email" required><br><br>
-      </fieldset>
-
-      <fieldset>
-        <legend>Yes/No & Choices</legend>
-        <p>Do you enjoy math?</p>
-        <label><input type="radio" name="Enjoys Math" value="Yes" checked> Yes</label>
-        <label><input type="radio" name="Enjoys Math" value="No"> No</label>
-        <br><br>
-
-        <p>Which areas interest you? (choose any)</p>
-        <label><input type="checkbox" name="Area: Algebra" value="Yes"> Algebra</label>
-        <label><input type="checkbox" name="Area: Geometry" value="Yes"> Geometry</label>
-        <label><input type="checkbox" name="Area: Calculus" value="Yes"> Calculus</label>
-        <label><input type="checkbox" name="Area: AI" value="Yes"> AI</label>
-        <br><br>
-
-        <label for="level">Your current level:</label>
-        <select id="level" name="Level">
-          <option>Middle School</option>
-          <option>High School</option>
-          <option>Undergraduate</option>
-          <option>Graduate</option>
-          <option>Other</option>
-        </select><br><br>
-      </fieldset>
-
-      <fieldset>
-        <legend>Ratings</legend>
-        <label for="rating">Rate your interest in programming (0–10):</label>
-        <input type="range" id="rating" name="Programming Interest (0-10)" min="0" max="10" value="7"><br><br>
-
-        <label for="hours">Hours per week you can study:</label>
-        <input type="number" id="hours" name="Study Hours/Week" min="0" max="80" value="5"><br><br>
-      </fieldset>
-
-      <fieldset>
-        <legend>Comments</legend>
-        <label for="comments">Anything else to add?</label><br>
-        <textarea id="comments" name="Comments" rows="6" cols="50"></textarea>
-      </fieldset>
-
-      <button type="submit">Submit Survey</button>
-    </form>
-  </section>
+<section>
+<h2 class="section-title">Questionnaire</h2>
+<form action="mailto:your.email@example.com" enctype="text/plain" method="POST">
+<fieldset>
+<legend>Basics</legend>
+<label for="qname">Name:</label>
+<input id="qname" name="Name" required="" type="text"/><br/><br/>
+<label for="qemail">Email:</label>
+<input id="qemail" name="Email" required="" type="email"/><br/><br/>
+</fieldset>
+<fieldset>
+<legend>Yes/No &amp; Choices</legend>
+<p>Do you enjoy math?</p>
+<label><input checked="" name="Enjoys Math" type="radio" value="Yes"/> Yes</label>
+<label><input name="Enjoys Math" type="radio" value="No"/> No</label>
+<br/><br/>
+<p>Which areas interest you? (choose any)</p>
+<label><input name="Area: Algebra" type="checkbox" value="Yes"/> Algebra</label>
+<label><input name="Area: Geometry" type="checkbox" value="Yes"/> Geometry</label>
+<label><input name="Area: Calculus" type="checkbox" value="Yes"/> Calculus</label>
+<label><input name="Area: AI" type="checkbox" value="Yes"/> AI</label>
+<br/><br/>
+<label for="level">Your current level:</label>
+<select id="level" name="Level">
+<option>Middle School</option>
+<option>High School</option>
+<option>Undergraduate</option>
+<option>Graduate</option>
+<option>Other</option>
+</select><br/><br/>
+</fieldset>
+<fieldset>
+<legend>Ratings</legend>
+<label for="rating">Rate your interest in programming (0–10):</label>
+<input id="rating" max="10" min="0" name="Programming Interest (0-10)" type="range" value="7"/><br/><br/>
+<label for="hours">Hours per week you can study:</label>
+<input id="hours" max="80" min="0" name="Study Hours/Week" type="number" value="5"/><br/><br/>
+</fieldset>
+<fieldset>
+<legend>Comments</legend>
+<label for="comments">Anything else to add?</label><br/>
+<textarea cols="50" id="comments" name="Comments" rows="6"></textarea>
+</fieldset>
+<button type="submit">Submit Survey</button>
+</form>
+</section>
 </main>
-
 <footer>
-  <p>© 2025 İlkin Hasanov • <a href="#top">Back to top ↑</a></p>
+<p>© 2025 İlkin Hasanov • <a href="#top">Back to top ↑</a></p>
 </footer>
 </body>
 </html>
